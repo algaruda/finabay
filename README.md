@@ -8,16 +8,17 @@ Create a tiny RESTful web service with the following business requirements:
 - Service must perform loan application validation according to the following rules and reject application if:
   - Application comes from blacklisted personal id
   - N application / second are received from a single country (essentially we want to limit number of loan applications coming from a country in a given timeframe)
-- Service must perform origin country resolution using the following web service and store country code together with the loan application. Because network is unreliable and services tend to fail, let's agree on default country code - "lv".
+- Service must perform origin country resolution by IP address and store country code together with the loan application. Because network is unreliable and services tend to fail, let's agree on default country code - "lv".
 
 ### Technical requirements
 
-You have total control over framework and tools, as long as application is written in Java. Feel free to write tests in any JVM language.
+You have total control over framework and tools, as long as application is written in .NET Framework.
+Feel free to write as many tests as you need.
 
 ### What gets evaluated
 
 - Conformance to business requirements
 - Code quality, including testability
-- How easy it is to run and deploy the service (don't make us install Oracle database please ;)
+- How easy it is to run and deploy the service
 
 **Good luck and have fun!**
